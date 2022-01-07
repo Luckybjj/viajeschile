@@ -4,6 +4,7 @@
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
+  <link rel="shortcut icon" type="image/png" href="assets/img/viajes.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="author" content="Bryan Lagos">
   <meta name="description" content="Viajes Chile">
@@ -11,6 +12,9 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+  <!--Mis Fuentes Tipografía-->
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
 
   <!---Mi estilo-->
   <link rel="stylesheet" href="./assets/css/style.css">
@@ -22,6 +26,8 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
+
+
   <title>Viajes Chile!</title>
 </head>
 
@@ -29,265 +35,254 @@
 
   <!--Barra de navegacion-->
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#"><img src="assets/img/viajes.svg" alt="viajeschilelogo" width="7%">Viajes
-        Chile</a>
+  <div class="container-fluid px-0" id="inicio">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top px-5">
+      <div class=" container-fluid">
+        <a class="navbar-brand fs-6" href="#">
+          <img src="assets/img/viajes.svg" alt="viajeslog" width="23">
+          Viajes Chile
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0 ">
+            <li class="nav-item ">
+              <a class="nav-link text-white" aria-current="page" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#quienessomos">Quienes Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#destacados">Destacado</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  " aria-current="page" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Headder Carousel-->
+
+    <header id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="llamas">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="moai">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/card3.jpg" class="d-block w-100" alt="pinguino">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-target="#carouselExampleFade" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visual-hiden"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link text-white" href="#inicio">Inicio <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#Quienes Somos">Quienes Somos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#Destacados">Destacados</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#Contacto">Contacto</a>
-          </li>
-        </ul>
-      </div>
-
-    </div>
-
-  </nav>
-
-  <!--Headder Carousel-->
-
-  <header id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="llamas">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="moai">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/img/card3.jpg" class="d-block w-100" alt="pinguino">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-target="#carouselExampleFade" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-target="#carouselExampleFade" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </button>
-  </header>
-
-  <section id="Quienes Somos">
-    <div class="text-center m-3 text-white">
-      <h3>¿Quienes Somos?</h3>
-    </div>
-  </section>
-
-  <!--linea de separacion1-->
-  <section class="container d-none d-md-block">
-    <div class="border-top border-info mb-3"></div>
-  </section>
+      <button class="carousel-control-next" type="button" data-target="#carouselExampleFade" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visual-hiden"></span>
+      </button>
+    </header>
 
 
-  <!--quienes somos-->
-  <section class="container text-white">
-    <div class="row">
+    <!--Quienes somos-->
+    <section id="quienessomos" class="container pb-5 px-2">
+      <div class="d-none d-sm-none d-md-block">
+        <h2 class="h4 text-white fw-light text-center my-5 border-bottom border-info pb-4">¿Quiénes somos?
+        </h2>
+        <div class="row">
+          <!--card01-->
+          <div class="col mx-3">
+            <div class="card border-0 bg-transparent text-white" style="width: 100%;">
+              <i class="fas fa-plane bg-info text-center py-1 fa-2x" style="height: 2.5rem;"></i>
+              <div class="card-body p-0">
+                <p class="card-text text-white fs-6 fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Iure eveniet numquam labore consequatur veritatis vitae illum magnam reprehenderit sint obcaecati,
+                  ipsam odio laborum cumque qui aspernatur exercitationem nihil ab est. Quod dolorum earum ad nisi magni
+                  quasi quos, possimus amet doloremque aperiam dolores incidunt et hic, iste veritatis optio est
+                  delectus consequuntur ea natus neque? Inventore dolorum adipisci consequuntur nam rem quas,
+                  blanditiis, eos nulla numquam, consectetur porro incidunt aut! Nihil beatae nobis dolore reiciendis
+                  consequatur soluta suscipit, quia consequuntur, repudiandae, dolor cupiditate id. Dolores labore iure
+                  distinctio sit odio minima officiis ullam! Quasi accusamus dolor blanditiis ea molestiae ab!
+              </div>
+            </div>
+          </div>
 
-      <article class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-        <ul>
-          <div class="text-center bg-info p-1"><i class="fas fa-plane fa-3x "></i></div>
+          <!---card02-->
+          <div class="col mx-3">
+            <div class="card border-0 bg-transparent text-white" style="width: 100%;">
+              <div class="card-body p-0">
+                <p class="card-text text-white fs-6 fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eaque deserunt itaque aliquam repellendus dolorem soluta eligendi tempora. Consectetur optio sed,
+                  ipsum hic debitis molestias, est quas impedit voluptates autem, consequuntur labore quibusdam
+                  distinctio fugiat magnam placeat doloremque id. Eaque aperiam impedit, officiis accusamus id facilis
+                  veritatis sed, inventore iure sapiente earum doloremque. Obcaecati architecto consequatur soluta
+                  laudantium quisquam quasi quod tempora? Eligendi earum quasi eius illum soluta perferendis harum
+                  voluptatem similique amet molestiae. Dolore sunt eius nulla delectus cupiditate qui possimus officiis
+                  enim, exercitationem nisi error officia dolorem quas voluptatibus itaque obcaecati reiciendis
+                  provident quisquam laborum, ratione nostrum libero! Sint!
+                </p>
+              </div>
+              <i class="fas fa-mountain bg-info text-center py-1 fa-2x" style="height: 2.5rem;"></i>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, quis possimus quaerat beatae fugiat sint
-            similique illo, quos dignissimos qui sit laborum aliquid odio voluptates, odit excepturi voluptas numquam
-            rerum? Hic quos, suscipit molestias, aliquid ipsa beatae magnam praesentium nobis libero consequuntur
-            porro
-            numquam delectus voluptatem minus inventore ab deleniti adipisci incidunt quod! Saepe, tenetur
-            exercitationem?
-            Perferendis placeat sunt libero porro commodi, aperiam quis error soluta blanditiis, sapiente doloribus,
-            molestias doloremque. Sint ipsam quia nostrum earum provident dicta molestias, repellendus assumenda totam
-            ab
-            sit sed, ipsum expedita! Modi, magni accusantium consectetur itaque cupiditate magnam veniam praesentium?
-            Hic
-            accusamus laboriosam temporibus?</p>
-        </ul>
+            </div>
+          </div>
 
-      </article>
-
-      <article class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-        <ul>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, modi eos! Voluptatem qui delectus, iste
-            praesentium eum esse commodi fuga ipsum voluptatibus, sint quos molestiae cupiditate? Omnis vero mollitia
-            tempora dolor adipisci saepe harum consequatur earum atque assumenda eos nemo voluptatem voluptatum illo
-            dolorum sit, asperiores iste maiores perspiciatis beatae. Omnis ducimus labore fugit beatae saepe
-            accusamus
-            quae laborum soluta doloribus maxime, praesentium deleniti voluptate cupiditate dolore quod exercitationem
-            quos voluptatem amet eum quo asperiores minus nesciunt incidunt. Repellat numquam alias fuga repellendus
-            quia
-            nulla sapiente dolorem temporibus, magni, ratione voluptatem eveniet exercitationem esse fugiat, ullam
-            ipsum
-            necessitatibus delectus? Doloribus.</p>
-          <div class="text-center bg-info p-1"><i class="fas fa-mountain fa-3x"></i></div>
-
-
-
-        </ul>
-
-      </article>
-
-      <article class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-
-        <p class="text-center bg-info p-1"><i class="fas fa-route fa-3x"></i></p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit facere sit nam, dolorum nemo corporis
-          corrupti unde veritatis dignissimos culpa molestias fugiat odit eveniet, accusamus id sed dolore
-          blanditiis
-          dolores! Adipisci facere inventore sint officia veniam illum voluptatem, aliquam quos quibusdam deserunt,
-          repellat rerum nam nulla enim voluptas sequi nisi numquam temporibus quam, dignissimos consequatur
-          asperiores!
-          Cum maiores placeat optio vitae, repellendus obcaecati eum, molestias vero, tenetur ratione veritatis at?
-          Aspernatur dolor inventore nostrum eaque fugit laudantium earum consequatur aliquam quidem! Quas tempora a
-          ipsam obcaecati iste velit quibusdam illum explicabo placeat aperiam iure soluta odio magni dolore,
-          officiis
-          nam!</p>
-
-
-
-
-      </article>
-
-
-
-
-    </div>
-  </section>
-
-
-  <!---seccion Destacados-->
-  <section id="Destacados" class="text-center my-4 text-white">
-    <h3>Destacados</h3>
-  </section>
-
-  <!--linea de separacion2-->
-  <section class="container d-none d-md-block">
-    <div class="border-top border-info mb-3"></div>
-  </section>
-
-
-  <section class="container ">
-    <div class="row ">
-
-      <article class="card col-12 col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 bg-info" style="width: 18rem;">
-        <img src="assets/img/card1.jpg" class="card-img-top" alt="paisaje1">
-        <div class="card-body">
-          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit in
-            laboriosam perferendis soluta dolores ipsum repudiandae voluptate unde?</p>
+          <!--card03-->
+          <div class="col mx-3">
+            <div class="card border-0 bg-transparent text-white" style="width: 100%;">
+              <i class="fas fa-route bg-info text-center py-1 fa-2x" style="height: 2.5rem;"></i>
+              <div class="card-body p-0">
+                <p class="card-text text-white fs-6 fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloremque ipsa ad perspiciatis vitae vel! Dicta eligendi, magni a ex error cupiditate sint. Incidunt
+                  sunt voluptatem sequi consequatur quod. Ullam dolores alias enim sequi placeat dolore obcaecati
+                  inventore quos voluptatum eveniet deleniti, maiores magni nam animi! Minus accusantium non alias quae
+                  amet et corrupti culpa neque? Voluptate autem debitis expedita, asperiores accusamus libero eum
+                  laborum quidem, similique deserunt nihil id, molestias ipsum est exercitationem? Nostrum voluptates
+                  dicta neque ipsam rem dolores quidem, veritatis voluptatibus quo quisquam aperiam, facere vel
+                  accusantium optio earum fugit quam eaque, excepturi cumque. Error labore cumque maxime?
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </article>
-
-      <article class="card col-12 col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 bg-info" style="width: 18rem;">
-        <img src="assets/img/card2.jpg" class="card-img-top" alt="paisaje2">
-        <div class="card-body">
-          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto at earum optio suscipit
-            iste nemo repellendus quae qui laborum quaerat!</p>
-        </div>
-      </article>
-
-      <article class="card col-12 col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 bg-info" style="width: 18rem;">
-        <img src="assets/img/card3.jpg" class="card-img-top" alt="paisaje3">
-        <div class="card-body">
-          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quam deleniti odit.
-            Asperiores mollitia dolore quas hic? Quod, voluptas iure?</p>
-        </div>
-      </article>
-
-      <article class="card col-12 col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 bg-info" style="width: 18rem;">
-        <img src="assets/img/card4.jpg" class="card-img-top" alt="paisaje4">
-        <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-        </div>
-      </article>
-
-    </div>
-
-  </section>
-
-  <!---seccion Destacados-->
-  <section id="Contacto" class="text-center my-4 text-white">
-    <h3>Contacto</h3>
-  </section>
-
-  <!--linea de separacion2-->
-  <section class="container d-none d-md-block ">
-    <div class="border-top border-info mb-3"></div>
-  </section>
-
-
-  <section class="container my-4">
-    <div>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit neque doloremque, maxime ducimus repellat
-      quisquam commodi quidem numquam, iure eaque, cupiditate nihil iusto. Quia dolor quaerat inventore pariatur eos eum
-      ab, totam quod a soluta distinctio quo ea doloremque ratione ducimus laudantium esse modi repellat sed animi.
-      Iste, quibusdam quod.
-
-    </div>
-  </section>
-
-  <footer class="container-fluid text-center bg-info text-white">
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-2">
-        <h4>VIAJES CHILE</h4>
       </div>
 
-      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-2 ">
-        <i class="fab fa-github-square fa-2x mx-2 "></i>
-        <i class="fab fa-linkedin-in fa-2x mx-2"></i>
-        <i class="fab fa-twitter-square fa-2x mx-2"></i>
-        <i class="fab fa-facebook-square fa-2x mx-2"></i>
+    </section>
+
+    <!---seccion Destacados-->
+    <section id="destacados" class="container pb-5 px-2">
+      <h2 class="h4 text-white fw-light text-center my-5 border-bottom border-info pb-4">Destacados</h2>
+
+      <div class="row">
+        <!--card01-->
+        <div class="col-xs-12 col-md-6 col-lg-3 mb-5 px-2">
+          <div class="card">
+            <img src="assets/img/card1.jpg" class="card-img-top img-fluid" alt="paisaje">
+            <div class="card-body bg-info text-white px-4 pt-3 pb-5 fw-light">
+              <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.Some quick example text to build on the card title and make up the bulk
+                of the card'scontent.</p>
+            </div>
+
+          </div>
+        </div>
+        <!--card02-->
+        <div class="col-xs-12 col-md-6 col-lg-3 mb-5 px-2">
+          <div class="card">
+            <img src="assets/img/card4.jpg" class="card-img-top img-fluid" alt="paisaje2">
+            <div class="card-body bg-info text-white px-4 pt-3 pb-5 fw-light">
+              <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.Some quick example text to build on the card title and make up the bulk
+                of the card'scontent.</p>
+            </div>
+
+          </div>
+        </div>
+        <!--card03-->
+        <div class="col-xs-12 col-md-6 col-lg-3 mb-5 px-2">
+          <div class="card">
+            <img src="assets/img/card3.jpg" class="card-img-top" alt="paisaje3">
+            <div class="card-body bg-info text-white px-4 pt-3 pb-5 fw-light">
+              <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.Some quick example text to build on the card title and make up the bulk
+                of the card'scontent.</p>
+            </div>
+
+          </div>
+        </div>
+        <!---card04-->
+        <div class="col-xs-12 col-md-6 col-lg-3 mb-5 px-2">
+          <div class="card">
+            <img src="assets/img/card4.jpg" class="card-img-top" alt="paisaje4">
+            <div class="card-body bg-info text-white px-4 pt-3 pb-5 fw-light">
+              <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.Some quick example text to build on the card title and make up the bulk
+                of the card's
+                content.</p>
+            </div>
+
+          </div>
+        </div>
+
       </div>
 
-    </div>
-
-  </footer>
+    </section>
 
 
+    <!---seccion Contacto-->
+    <section id="contacto" class="text-center my-4 text-white">
+      <div class="container">
+        <h3>Contacto</h3>
+      </div>
+
+    </section>
+
+    <!--linea de separacion2-->
+    <section class="container d-none d-md-block ">
+      <div class="border-top border-info mb-3"></div>
+    </section>
 
 
+    <section class="container my-4">
+      <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit neque doloremque, maxime ducimus
+        repellat
+        quisquam commodi quidem numquam, iure eaque, cupiditate nihil iusto. Quia dolor quaerat inventore pariatur eos
+        eum
+        ab, totam quod a soluta distinctio quo ea doloremque ratione ducimus laudantium esse modi repellat sed animi.
+        Iste, quibusdam quod.
+
+      </div>
+    </section>
 
 
+    <!--Foormulario-->
+    <footer class="container-fluid text-center bg-info text-white">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-2">
+          <h4>VIAJES CHILE</h4>
+        </div>
 
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-2">
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square fa-2x m-2 text-white"
+              data-toggle="tooltip" data-placement="top" title="Twitter"></i></a>
 
+          <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square fa-2x m-2 text-white"
+              data-toggle="tooltip" data-placement="top" title="Facebook"></i></a>
 
+          <a href="https://github.com/" target="_blank"><i class="fab fa-github-square fa-2x m-2 text-white"
+              data-toggle="tooltip" data-placement="top" title="GitHub"></i></a>
 
+          <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-2x m-2 text-white"
+              data-toggle="tooltip" data-placement="top" title="Linkedin"></i></a>
+        </div>
+      </div>
 
+    </footer>
 
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
 
-
-
-
-
-
-
-
-
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
-
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
-    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
-    crossorigin="anonymous"></script>
-  <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+      integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+      crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
